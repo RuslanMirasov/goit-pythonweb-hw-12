@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confirm your email</title>
+  </head>
+  <body>
+    <p>Hi {{ username }},</p>
+    <p>Please confirm your email address to activate your account:</p>
+    <p><a href="{{ host }}api/auth/confirmed_email/{{ token }}">Verification</a></p>
+    <p>The link is valid for 7 days.</p>
+  </body>
+</html>
